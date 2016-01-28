@@ -22,4 +22,13 @@ mongoimport --db test --collection restaurants --drop --file primer-dataset.json
 1. Push `queries.js` to your repo.
 1. Submit a pull request to the project repo.
 
-## Scenarios
+## Hamburgers
+
+1. You are hungry and feel like having a hamburger. Find the number of restaurants listed `Hamburgers` as their main `cuisine`.
+1. Geez, there are way too many of them. Let's narrow down our search. You are in Manhattan right now so let's find how many restaurants listed `Hamburgers` as their main `cuisine` in `Manhattan`.
+1. Let's have something nice and get rid of `McDonals's` in the results. Find how many restaurants listed `Hamburgers` as their main `cuisine` in `Manhattan` *and* exclude `Mcdonald`.
+1. Hmm... we are getting closer. Let's also get rid of `Burger King` as well.
+1. There are still plenty of choices. Maybe you should just pick one closer to your home. Find out the list of `distinct` `street` based on the results of Question 4.
+1. Alright, you are just a block away from `Pearl Street`. Enhance the query in Question 4 using the `street` value in the `address` attribute. Also please display the name of the restaurant *ONLY* in the result. Your query should now yield exactly *one* restaurant. What is it?
+
+
