@@ -29,7 +29,7 @@ mongoimport --db test --collection restaurants --drop --file primer-dataset.json
 
 ### Pizza
 1. List out the name of all restaurants which **contain** the word `Pizza` in the *cuisine* but  **DO NOT contain** the word `Pizza` or `Pizzeria` in the restaurant **name** (Hint: use regular expression).
-1. List out the name of all *straight A* (i.e. the restaurant has only received `A` grade ever) restaurants which contain the word `Pizza` in the `cuisine` and are located in the `Queens` *borough*. 
+1. List out the name of all *straight A* (i.e. the restaurant has only received `A` grade ever) restaurants which contain the word `Pizza` in the `cuisine` and are located in the `Queens` *borough* (Hint: you may want to first find out how many available grade values we have in the entire dataset).
 
 ### Hamburgers
 1. You are hungry and feel like having a hamburger. Find the number of restaurants listed `Hamburgers` as their main *cuisine*.
@@ -37,7 +37,7 @@ mongoimport --db test --collection restaurants --drop --file primer-dataset.json
 1. Let's have something nice and get rid of the `McDonald's` in the results. Find how many restaurants listed `Hamburgers` as their main `cuisine` in `Manhattan` *and* exclude all `Mcdonald's` (Note: In the data set, _McDonald's_ was presented in inconsistent ways, e.g. `McDonald's` and `McDonald'S`. So please use the regular expression `/McDonald/` in your query).
 1. Hmm... we are getting closer. Let's also get rid of `Burger King` as well.
 1. There are still plenty of choices. Maybe you should just pick one closer to your home. Find out the list of `distinct` `street` based on the results of Question 4.
-1. Alright, you are just a block away from `Pearl Street`. Find the `name` of the `Hamburger` restaurant (i.e. your query should return the name of the restaurant only) on `Pearl Street`. Your query should now yield exactly *one* restaurant. What is it?
+1. Alright, you are just a block away from `Pearl Street`. Find the `name` of the `Hamburger` restaurant (i.e. your query should return the name of the restaurant only) on `Pearl Street`. Your query should now yield exactly *one* restaurant. What is it? (Submit the query and also the name of the restaurant as a comment)
 
 ### Hard (You need to do some research first)
 1. Find the name of the restaurants which listed `Japanese` as their main cuisine and has exactly 9 `grades`.
